@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap');
+
+body {
+  background: radial-gradient(circle at 70% 10%, #9a7bdd 0%, #7cc6ea 100%);
+  font-family: 'Heebo', Arial, sans-serif;
+  direction: rtl;
+  margin: 0;
+  min-height: 100vh;
+}
+#app {
+  max-width: 600px;
+  margin: auto;
+  padding: 24px 0;
+}
+h1, h2, h3, h4 {
+  font-weight: 800;
+  text-align: center;
+  margin-top: 0.5em;
+}
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label, select, input, button {
+  font-size: 1.2em;
+  margin: 8px 0;
+}
+input[type="text"], input[type="number"] {
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  padding: 8px 12px;
+  width: 200px;
+  font-size: 1.1em;
+  text-align: center;
+}
+button {
+  border: none;
+  border-radius: 2em;
+  background: linear-gradient(90deg, #6d5dd6, #9ae3e3);
+  color: #fff;
+  padding: 10px 32px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px #c5c5ee90;
+  transition: 0.2s;
+  margin: 8px;
+  cursor: pointer;
+}
+button:active {
+  background: linear-gradient(90deg, #9ae3e3, #6d5dd6);
+}
+.card {
+  background: #fff6;
+  border-radius: 2em;
+  padding: 2em 1.5em;
+  margin: 24px 0 16px 0;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 2px 12px #9a7bdd22;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#qr-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#song-placeholder {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #333;
+  margin: 12px 0;
+}
+.score-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+  margin: 10px 0 2px 0;
+  font-weight: 700;
+}
+#answer-result {
+  min-height: 2em;
+  font-size: 1.15em;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+#history-table-section {
+  width: 100%;
+  margin-top: 2em;
+}
+#history-table {
+  width: 100%;
+  border-radius: 1.2em;
+  background: #fff7;
+  overflow: hidden;
+  box-shadow: 0 2px 8px #eee;
+  border-collapse: collapse;
+}
+#history-table th, #history-table td {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.1em;
+}
+#history-table th {
+  background: #eee;
+  font-weight: 800;
+}
+#history-table tbody tr:last-child td {
+  border-bottom: none;
+}
+ul {
+  padding-right: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  padding: 0.2em 0;
+  font-size: 1em;
+}
+@media (max-width: 700px) {
+  #app {
+    max-width: 100vw;
+    padding: 0;
+  }
+  .card {
+    padding: 0.8em;
+  }
+}
